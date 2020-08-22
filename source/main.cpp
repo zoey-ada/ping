@@ -1,7 +1,13 @@
+#include <platypus.h>
 
 int main()
 {
-	return 0;
+	auto game = std::make_shared<Platypus>("demo game");
+	game->initialize();
+	auto ret = game->run();
+	game->shutdown();
+
+	return ret;
 }
 
 #ifdef _WIN32

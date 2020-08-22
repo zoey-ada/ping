@@ -3,8 +3,9 @@ set(project Demo_Game)
 add_subdirectory("libraries")
 
 include_directories(
-	${CMAKE_SOURCE_DIR}/platypus
+	${CMAKE_SOURCE_DIR}
 	${CMAKE_BINARY_DIR}
+	${CMAKE_CURRENT_SOURCE_DIR}/libraries/platypus
 )
 
 set(srcs
