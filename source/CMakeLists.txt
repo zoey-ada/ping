@@ -10,6 +10,7 @@ include_directories(
 
 set(srcs
 	main.cpp
+	demoGameLogic.h
 )
 source_group(source FILES ${srcs})
 
