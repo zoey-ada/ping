@@ -1,22 +1,20 @@
-set(project Demo_Game)
 
-add_subdirectory("libraries")
+add_subdirectory(libraries)
 
 include_directories(
 	${CMAKE_SOURCE_DIR}
-	${CMAKE_BINARY_DIR}
-	${CMAKE_CURRENT_SOURCE_DIR}/libraries/platypus
 )
 
 set(srcs
 	main.cpp
 	demoGameLogic.h
 )
-source_group(source FILES ${srcs})
 
-add_executable(${project} WIN32 ${srcs})
+add_executable(Demo_Game WIN32 ${srcs})
+link_static(Demo_Game)
+warnings_as_errors(Demo_Game)
 
-target_link_libraries(${project}
-#	platypus-proto
+target_link_libraries(Demo_Game
+	platypus-proto
 	platypus
 )
