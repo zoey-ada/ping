@@ -1,0 +1,4 @@
+[submodule "source/libraries/platypus"]
+	path = source/libraries/platypus
+	url = https://github.com/zoey-ada/platypus.git
+	update = merge
