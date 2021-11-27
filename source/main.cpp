@@ -1,6 +1,7 @@
 #include "demoGameLogic.h"
 
 #include <platypus.h>
+#include <utilities/logging/logger.h>
 #include <views/humanView.h>
 
 class DemoGame : public Platypus
@@ -30,8 +31,11 @@ protected:
 int main()
 {
 	auto game = std::make_shared<DemoGame>();
+	//logInfo("starting game");
 	game->initialize();
+	logWarning("running game", "state");
 	auto ret = game->run();
+	logError("ending game");
 	game->shutdown();
 
 	return ret;
