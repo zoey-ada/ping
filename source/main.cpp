@@ -1,8 +1,8 @@
 #include "demoGameLogic.h"
 
-#include <platypus.h>
-#include <utilities/logging/logger.h>
-#include <views/humanView.h>
+#include <platypus.hpp>
+#include <utilities/logging/logger.hpp>
+#include <views/humanView.hpp>
 
 class DemoGame : public Platypus
 {

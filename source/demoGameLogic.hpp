@@ -1,6 +1,6 @@
 #pragma once
 
-#include <baseGameLogic.h>
+#include <baseGameLogic.hpp>
 
 class DemoGameLogic : public BaseGameLogic
 {
