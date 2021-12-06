@@ -7,7 +7,7 @@ include_directories(
 
 set(srcs
 	main.cpp
-	demoGameLogic.h
+	demoGameLogic.hpp
 )
 
 add_executable(Demo_Game WIN32 ${srcs})

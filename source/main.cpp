@@ -1,4 +1,4 @@
-#include "demoGameLogic.h"
+#include "demoGameLogic.hpp"
 
 #include <platypus.hpp>
 #include <utilities/logging/logger.hpp>
@@ -11,12 +11,12 @@ public:
 		: Platypus("Demo Game") { }
 	virtual ~DemoGame() = default;
 
-	const bool initialize() { return Platypus::initialize(); }
-	const int run() { return Platypus::run(); }
+	bool initialize() { return Platypus::initialize(); }
+	int run() { return Platypus::run(); }
 	void shutdown() { return Platypus::shutdown(); }
 
 protected:
-	const std::shared_ptr<BaseGameLogic> createLogicAndView() override
+	std::shared_ptr<BaseGameLogic> createLogicAndView() override
 	{
 		auto logic = std::make_shared<DemoGameLogic>();
 		logic->initialize();
