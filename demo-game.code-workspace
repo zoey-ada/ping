@@ -35,6 +35,8 @@
 			"map": "cpp",
 			"clang-format": "yaml",
 			"clang-tidy": "yaml",
+			"future": "cpp",
+			"*.inc": "cpp"
 		},
 		"clang-tidy.config_file": ".clang-tidy",
 		"clang-tidy.compilerArgs": [
