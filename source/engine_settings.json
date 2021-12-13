@@ -1,0 +1,29 @@
+{
+	"renderer_settings": {
+		"renderer_type": "direct_x",
+		"frame_rate": {
+			"numerator": 1,
+			"denominator": 60
+		},
+		"background_color": "#00FFFF",
+		"full_screen": false,
+		"resolution": {
+			"height": 720,
+			"width": 1280
+		}
+	},
+	"loggers": [
+		{
+			"type": "console",
+			"level": "debug"
+		},
+		{
+			"type": "file",
+			"level": "debug",
+			"file_logger_settings": {
+				"root_dir": "./logs",
+				"use_single_file": false
+			}
+		}
+	]
+}
