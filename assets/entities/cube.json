@@ -1,0 +1,12 @@
+{
+	"render_component_3d": {
+		"pixel_shader": "",
+		"vertex_shader": "",
+		"texture": "assets.zip/platypus.jpg",
+		"mesh": "assets.zip/cube.obj"
+	},
+	"position_component": {
+		"x": 0,
+		"y": 0
+	}
+}

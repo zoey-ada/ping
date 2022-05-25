@@ -11,3 +11,4 @@ include(cmake/config.cmake)
 include(cmake/funcs.cmake)
 
 add_subdirectory("source")
+add_subdirectory("assets")

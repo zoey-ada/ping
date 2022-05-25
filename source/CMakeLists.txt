@@ -11,6 +11,7 @@ set(srcs
 )
 
 add_executable(Demo_Game WIN32 ${srcs})
+
 link_static(Demo_Game)
 warnings_as_errors(Demo_Game)
 
