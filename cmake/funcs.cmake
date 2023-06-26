@@ -144,3 +144,53 @@ function(_dg_process_entity entity_file out_dir __out_custom_target __out_proces
 	set(${__out_custom_target} "${target_name}" PARENT_SCOPE)
 	set(${__out_processed_entity} ${processed_entity} PARENT_SCOPE)
 endfunction()
+
+function(_dg_process_font font_file out_dir __out_custom_target __out_processed_font)
+	get_filename_component(font_name ${font_file} NAME_WLE)
+	get_filename_component(font_file_extension ${font_file} EXT)
+	string(SUBSTRING ${font_file_extension} 1 -1 font_file_extension)
+	get_filename_component(font_file_abs ${font_file} ABSOLUTE)
+	set(processed_font "${out_dir}/${font_name}.${font_file_extension}")
+	set(target_name "processed-font-${font_name}_${font_file_extension}")
+
+	add_custom_command(
+		OUTPUT ${processed_font}
+		COMMENT "processing font: ${font_name}"
+
+		DEPENDS ${font_file}
+
+		COMMAND cmake -E copy "${font_file_abs}" "${processed_font}"
+	)
+
+	add_custom_target("${target_name}"
+		DEPENDS ${processed_font}
+	)
+
+	set(${__out_custom_target} "${target_name}" PARENT_SCOPE)
+	set(${__out_processed_font} ${processed_font} PARENT_SCOPE)
+endfunction()
+
+function(_dg_process_sound sound_file out_dir __out_custom_target __out_processed_sound)
+	get_filename_component(sound_name ${sound_file} NAME_WLE)
+	get_filename_component(sound_file_extension ${sound_file} EXT)
+	string(SUBSTRING ${sound_file_extension} 1 -1 sound_file_extension)
+	get_filename_component(sound_file_abs ${sound_file} ABSOLUTE)
+	set(processed_sound "${out_dir}/${sound_name}.${sound_file_extension}")
+	set(target_name "processed-sound-${sound_name}_${sound_file_extension}")
+
+	add_custom_command(
+		OUTPUT ${processed_sound}
+		COMMENT "processing sound: ${sound_name}"
+
+		DEPENDS ${sound_file}
+
+		COMMAND cmake -E copy "${sound_file_abs}" "${processed_sound}"
+	)
+
+	add_custom_target("${target_name}"
+		DEPENDS ${processed_sound}
+	)
+
+	set(${__out_custom_target} "${target_name}" PARENT_SCOPE)
+	set(${__out_processed_sound} ${processed_sound} PARENT_SCOPE)
+endfunction()

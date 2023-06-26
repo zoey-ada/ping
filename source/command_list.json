@@ -1,0 +1,10 @@
+{
+	"commands":[
+		{"name": "move-up", "friendly_name": "Move Up"},
+		{"name": "move-down", "friendly_name": "Move Down"},
+		{"name": "move-left", "friendly_name": "Move Left"},
+		{"name": "move-right", "friendly_name": "Move Right"},
+		{"name": "select", "friendly_name": "Select Option"},
+		{"name": "menu", "friendly_name": "Open Menu"}
+	]
+}

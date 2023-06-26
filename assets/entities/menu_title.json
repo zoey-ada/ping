@@ -1,0 +1,15 @@
+{
+	"render_component_2d": {
+		"pixel_shader": "assets.zip/shaders/simple_pixel.cso",
+		"vertex_shader": "assets.zip/shaders/simple_vertex.cso",
+		"texture": "assets.zip/textures/ping_title.png"
+	},
+	"transform_component_2d": {
+		"position_x": -20.99,
+		"position_y": 5,
+		"scale_x": 41.98,
+		"scale_y": 20,
+		"rotation_clockwise": 0,
+		"depth": 90
+	}
+}

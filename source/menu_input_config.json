@@ -1,0 +1,10 @@
+{
+	"refresh_rate":
+	{
+		"numerator": 60,
+		"denominator": 1
+	},
+	"button_mappings":[
+		{"input": 59, "command": "begin"}
+	]
+}

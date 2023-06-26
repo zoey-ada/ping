@@ -2,3 +2,4 @@
 	path = source/libraries/platypus
 	url = git@github.com:zoey-ada/platypus.git
 	update = merge
+	branch = main

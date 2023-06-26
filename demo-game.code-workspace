@@ -100,18 +100,35 @@
 			".clang-tidy": "yaml",
 			"CMakeLists.txt": "cmake",
 			"strstream": "cpp",
-			"*.rh": "cpp"
+			"*.rh": "cpp",
+			"*.idl": "cpp",
+			"any": "cpp",
+			"ranges": "cpp",
+			"span": "cpp",
+			"scoped_allocator": "cpp",
+			"cfenv": "cpp",
+			"complex": "cpp",
+			"csignal": "cpp",
+			"typeindex": "cpp",
+			"valarray": "cpp"
 		},
+
 		"C_Cpp.codeAnalysis.clangTidy.enabled": true,
 		"C_Cpp.codeAnalysis.clangTidy.args": [
-			"-D_CRT_SECURE_NO_WARNINGS=1",
+			// "-D_CRT_SECURE_NO_WARNINGS=1",
 		],
 		"C_Cpp.clang_format_style": "file",
 		"C_Cpp.clang_format_sortIncludes": true,
+		"C_Cpp.default.configurationProvider": "go2sh.cmake-integration",
+		"C_Cpp.formatting": "clangFormat",
+
 		"[yaml]": {
 			"editor.insertSpaces": true,
 			"editor.tabSize": 2,
 			"editor.autoIndent": "keep",
 		},
+		"gcovViewer.buildDirectories": [
+			"c:\\repos\\demo-game\\build\\Debug"
+		],
 	}
 }

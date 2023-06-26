@@ -1,0 +1,15 @@
+{
+	"render_component_2d": {
+		"pixel_shader": "assets.zip/shaders/simple_pixel.hlsl",
+		"vertex_shader": "assets.zip/shaders/simple_vertex.hlsl",
+		"texture": "assets.zip/textures/cyndaquil.png"
+	},
+	"transform_component_2d": {
+		"position_x": 20,
+		"position_y": 0,
+		"scale_x": 35,
+		"scale_y": 30,
+		"rotation_clockwise": 0,
+		"depth": 85
+	}
+}

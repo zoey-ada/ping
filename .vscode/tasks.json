@@ -1,0 +1,14 @@
+{
+	"tasks": [
+		{
+			"label": "generate coverage",
+			"command": "../generate-coverage.sh",
+			"isShellCommand": true,
+			"options": {
+				"cwd": "${workspaceFolder}/bin"
+			},
+			"problemMatcher": [],
+			"label": "generate coverage"
+		}
+	]
+}

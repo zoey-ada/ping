@@ -1,0 +1,39 @@
+{
+	"general_settings": {
+		"event_manager_queue_count": 2
+	},
+	"resource_cache_settings": {
+		"cache_size_in_mb": 48,
+		"store_locations": [
+			"./",
+			"c:/repos/demo-game/bin"
+		]
+	},
+	"renderer_settings": {
+		"renderer_type": "direct_x",
+		"frame_rate": {
+			"numerator": 60,
+			"denominator": 1
+		},
+		"background_color": "#00FFFF",
+		"full_screen": false,
+		"resolution": {
+			"height": 720,
+			"width": 1280
+		}
+	},
+	"loggers": [
+		{
+			"type": "console",
+			"level": "verbose"
+		},
+		{
+			"type": "file",
+			"level": "debug",
+			"file_logger_settings": {
+				"root_dir": "./logs",
+				"use_single_file": false
+			}
+		}
+	]
+}

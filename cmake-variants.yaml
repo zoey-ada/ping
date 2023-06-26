@@ -1,0 +1,26 @@
+---
+buildType:
+  choices:
+    debug:
+      buildType: Debug
+      long: Build with debugging information
+      short: Debug
+    release:
+      buildType: Release
+      long: Optimize the resulting binaries
+      short: Release
+  default: debug
+  description: build type
+includeCoverage:
+  choices:
+    'no':
+      long: disable coverage
+      settings:
+        WITH_COVERAGE: 'no'
+      short: without coverage
+    'yes':
+      long: enable coverage
+      settings:
+        WITH_COVERAGE: 'yes'
+      short: with coverage
+  default: 'no'

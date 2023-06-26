@@ -1,0 +1,15 @@
+{
+	"refresh_rate":
+	{
+		"numerator": 60,
+		"denominator": 1
+	},
+	"button_mappings":[
+		{"input": 59, "command": "select"},
+		{"input": 58, "command": "menu"},
+		{"input": 68, "command": "move-up"},
+		{"input": 69, "command": "move-down"},
+		{"input": 70, "command": "move-left"},
+		{"input": 71, "command": "move-right"}
+	]
+}

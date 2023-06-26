@@ -1,0 +1,42 @@
+{
+	"render_component_2d": {
+		"pixel_shader": "assets.zip/shaders/simple_pixel.cso",
+		"vertex_shader": "assets.zip/shaders/simple_vertex.cso",
+		"texture": "assets.zip/textures/red.png"
+	},
+	"transform_component_2d": {
+		"position_x": -10,
+		"position_y": 0,
+		"scale_x": 5,
+		"scale_y": 5,
+		"rotation_clockwise": 0,
+		"depth": 90
+	},
+	"physics_component": {
+		"shape_2d": {
+			"rectangle_data": {
+				"center": {
+					"x": 0.0,
+					"y": 0.0
+				},
+				"dimensions": {
+					"height": 5,
+					"width": 5
+				}
+			}
+		},
+		"max_velocity": {
+			"x": 80.0,
+			"y": 80.0,
+			"z": 0.0
+		},
+		"friction": {
+			"x": 0.0,
+			"y": 0.0,
+			"z": 100.0
+		},
+		"mass": 4,
+		"restitution": 1,
+		"is_solid": true
+	}
+}

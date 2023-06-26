@@ -1,19 +1,18 @@
-#include "demoGameLogic.hpp"
-
 #include <platypus.hpp>
 #include <utilities/logging/logger.hpp>
 #include <views/humanView.hpp>
 
-class DemoGame : public Platypus
+#include "demoGameLogic.hpp"
+
+class DemoGame: public Platypus
 {
 public:
-	DemoGame()
-		: Platypus("Demo Game") { }
+	DemoGame(): Platypus("Demo Game") {}
 	virtual ~DemoGame() = default;
 
 	bool initialize() { return Platypus::initialize(); }
 	int run() { return Platypus::run(); }
-	void shutdown() { return Platypus::shutdown(); }
+	void shutdown() { return Platypus::deinitialize(); }
 
 protected:
 	std::shared_ptr<BaseGameLogic> createLogicAndView() override
@@ -21,7 +20,7 @@ protected:
 		auto logic = std::make_shared<DemoGameLogic>();
 		logic->initialize();
 
-		auto view = std::make_shared<HumanView>(this->_renderer, this->_settings);
+		auto view = std::make_shared<HumanView>(this->_renderer, this->_cache, this->_settings);
 		logic->addView(view);
 
 		return logic;
@@ -31,7 +30,7 @@ protected:
 int main()
 {
 	auto game = std::make_shared<DemoGame>();
-	//logInfo("starting game");
+	// logInfo("starting game");
 	game->initialize();
 	logWarning("running game", "state");
 	auto ret = game->run();

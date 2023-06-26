@@ -1,0 +1,47 @@
+{
+	"render_component_2d": {
+		"pixel_shader": "assets.zip/shaders/simple_pixel.cso",
+		"vertex_shader": "assets.zip/shaders/simple_vertex.cso",
+		"texture": "assets.zip/textures/green_10x10.png"
+	},
+	"transform_component_2d": {
+		"position_x": 0,
+		"position_y": -15,
+		"scale_x": 10,
+		"scale_y": 10,
+		"rotation_clockwise": 0,
+		"depth": 89
+	},
+	"movement_component_2d": {
+		"acceleration_x": 500.0,
+		"acceleration_y": 500.0,
+		"deceleration_x": 0.00005,
+		"deceleration_y": 0.00005,
+		"max_velocity_x": 0.004,
+		"max_velocity_y": 0.004
+	},
+	"physics_component": {
+		"shape_2d": {
+			"circle_data": {
+				"center": {
+					"x": 0.0,
+					"y": 0.0
+				},
+				"radius": 5
+			}
+		},
+		"max_velocity": {
+			"x": 50.0,
+			"y": 50.0,
+			"z": 0.0
+		},
+		"friction": {
+			"x": 30.0,
+			"y": 30.0,
+			"z": 100.0
+		},
+		"mass": 0,
+		"restitution": 0,
+		"is_solid": true
+	}
+}

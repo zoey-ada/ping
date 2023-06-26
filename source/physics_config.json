@@ -1,0 +1,304 @@
+{
+	"materials": [
+		{
+			"id": 1,
+			"name": "abs",
+			"friction": 0.4,
+			"specific_gravity": 1.05
+		},
+		{
+			"id": 2,
+			"name": "acrylic",
+			"friction": 0.6,
+			"specific_gravity": 1.19
+		},
+		{
+			"id": 3,
+			"name": "air",
+			"friction": 3,
+			"specific_gravity": 0.0013
+		},
+		{
+			"id": 4,
+			"name": "aluminum",
+			"friction": 1.20,
+			"specific_gravity": 2.7
+		},
+		{
+			"id": 5,
+			"name": "balsa wood",
+			"friction": 0.4,
+			"specific_gravity": 0.2
+		},
+		{
+			"id": 6,
+			"name": "beeswax",
+			"friction": 0.19,
+			"specific_gravity": 0.95
+		},
+		{
+			"id": 7,
+			"name": "brass",
+			"friction": 0.51,
+			"specific_gravity": 8.48
+		},
+		{
+			"id": 8,
+			"name": "brick",
+			"friction": 0.6,
+			"specific_gravity": 2.0
+		},
+		{
+			"id": 9,
+			"name": "cast iron",
+			"friction": 1.1,
+			"specific_gravity": 7.20
+		},
+		{
+			"id": 10,
+			"name": "cement",
+			"friction": 0.45,
+			"specific_gravity": 1.35
+		},
+		{
+			"id": 11,
+			"name": "chalk",
+			"friction": 0.8,
+			"specific_gravity": 2.3
+		},
+		{
+			"id": 12,
+			"name": "clay",
+			"friction": 0.3,
+			"specific_gravity": 2.2
+		},
+		{
+			"id": 13,
+			"name": "copper",
+			"friction": 1.6,
+			"specific_gravity": 8.96
+		},
+		{
+			"id": 14,
+			"name": "diamond",
+			"friction": 0.1,
+			"specific_gravity": 3.51
+		},
+		{
+			"id": 15,
+			"name": "earth",
+			"friction": 0.4,
+			"specific_gravity": 1.4
+		},
+		{
+			"id": 16,
+			"name": "epoxy",
+			"friction": 0.35,
+			"specific_gravity": 1.9
+		},
+		{
+			"id": 17,
+			"name": "glass",
+			"friction": 0.78,
+			"specific_gravity": 2.6
+		},
+		{
+			"id": 18,
+			"name": "gold",
+			"friction": 0.2,
+			"specific_gravity": 19.3
+		},
+		{
+			"id": 19,
+			"name": "human tissue",
+			"friction": 0.3,
+			"specific_gravity": 1.10
+		},
+		{
+			"id": 20,
+			"name": "human bone",
+			"friction": 0.37,
+			"specific_gravity": 1.55
+		},
+		{
+			"id": 21,
+			"name": "human fat",
+			"friction": 0.3,
+			"specific_gravity": 0.9165
+		},
+		{
+			"id": 22,
+			"name": "ice",
+			"friction": 0.05,
+			"specific_gravity": 0.92
+		},
+		{
+			"id": 23,
+			"name": "iron",
+			"friction": 1.0,
+			"specific_gravity": 7.87
+		},
+		{
+			"id": 24,
+			"name": "lead",
+			"friction": 0.43,
+			"specific_gravity": 11.35
+		},
+		{
+			"id": 25,
+			"name": "leather",
+			"friction": 0.5,
+			"specific_gravity": 0.95
+		},
+		{
+			"id": 26,
+			"name": "nickel",
+			"friction": 0.8,
+			"specific_gravity": 8.72
+		},
+		{
+			"id": 27,
+			"name": "nylon",
+			"friction": 0.25,
+			"specific_gravity": 1.12
+		},
+		{
+			"id": 28,
+			"name": "oak wood",
+			"friction": 0.4,
+			"specific_gravity": 0.75
+		},
+		{
+			"id": 29,
+			"name": "paper",
+			"friction": 0.2,
+			"specific_gravity": 0.9
+		},
+		{
+			"id": 30,
+			"name": "paraffin wax",
+			"friction": 0.19,
+			"specific_gravity": 0.80
+		},
+		{
+			"id": 31,
+			"name": "plastics",
+			"friction": 0.35,
+			"specific_gravity": 1.2
+		},
+		{
+			"id": 32,
+			"name": "polyester",
+			"friction": 0.60,
+			"specific_gravity": 1.75
+		},
+		{
+			"id": 33,
+			"name": "polyurethane",
+			"friction": 0.2,
+			"specific_gravity": 1.18
+		},
+		{
+			"id": 34,
+			"name": "pvc pipe",
+			"friction": 0.35,
+			"specific_gravity": 1.36
+		},
+		{
+			"id": 35,
+			"name": "red oak",
+			"friction": 0.4,
+			"specific_gravity": 0.7
+		},
+		{
+			"id": 36,
+			"name": "rubber",
+			"friction": 0.8,
+			"specific_gravity": 0.96
+		},
+		{
+			"id": 37,
+			"name": "sand",
+			"friction": 0.5,
+			"specific_gravity": 1.9
+		},
+		{
+			"id": 38,
+			"name": "steel",
+			"friction": 0.65,
+			"specific_gravity": 7.82
+		},
+		{
+			"id": 39,
+			"name": "table salt",
+			"friction": 0.57,
+			"specific_gravity": 2.17
+		},
+		{
+			"id": 40,
+			"name": "tin",
+			"friction": 0.42,
+			"specific_gravity": 7.28
+		},
+		{
+			"id": 41,
+			"name": "wool",
+			"friction": 0.55,
+			"specific_gravity": 1.32
+		},
+		{
+			"id": 42,
+			"name": "alcohol",
+			"friction": 0,
+			"specific_gravity": 0.82
+		},
+		{
+			"id": 43,
+			"name": "blood",
+			"friction": 0,
+			"specific_gravity": 1.060
+		},
+		{
+			"id": 44,
+			"name": "ethanol",
+			"friction": 0,
+			"specific_gravity": 0.78
+		},
+		{
+			"id": 45,
+			"name": "mercury",
+			"friction": 0,
+			"specific_gravity": 13.56
+		},
+		{
+			"id": 46,
+			"name": "natural gas",
+			"friction": 0,
+			"specific_gravity": 0.59
+		},
+		{
+			"id": 47,
+			"name": "oxygen",
+			"friction": 0,
+			"specific_gravity": 0.00143
+		},
+		{
+			"id": 48,
+			"name": "propane gas",
+			"friction": 0,
+			"specific_gravity": 1.55
+		},
+		{
+			"id": 49,
+			"name": "sea water",
+			"friction": 0,
+			"specific_gravity": 1.02
+		},
+		{
+			"id": 50,
+			"name": "water",
+			"friction": 0,
+			"specific_gravity": 1
+		}
+	]
+}

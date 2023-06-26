@@ -1,9 +1,31 @@
 {
+	"general_settings": {
+		"event_manager_queue_count": 2
+	},
+	"resource_cache_settings": {
+		"cache_size_in_mb": 48,
+		"resource_stores": [
+			{
+				"type": "zip_file",
+				"identifier": "assets.zip",
+				"zip_file_store_settings": {
+					"filepath": "c:/repos/demo-game/bin/assets.zip"
+				}
+			},
+			{
+				"type": "zip_file",
+				"identifier": "./",
+				"zip_file_store_settings": {
+					"filepath": "./"
+				}
+			}
+		]
+	},
 	"renderer_settings": {
 		"renderer_type": "direct_x",
 		"frame_rate": {
-			"numerator": 1,
-			"denominator": 60
+			"numerator": 60,
+			"denominator": 1
 		},
 		"background_color": "#00FFFF",
 		"full_screen": false,
@@ -15,7 +37,7 @@
 	"loggers": [
 		{
 			"type": "console",
-			"level": "debug"
+			"level": "verbose"
 		},
 		{
 			"type": "file",

@@ -1,12 +1,19 @@
 {
 	"render_component_3d": {
-		"pixel_shader": "",
-		"vertex_shader": "",
-		"texture": "assets.zip/platypus.jpg",
-		"mesh": "assets.zip/cube.obj"
+		"pixel_shader": "assets.zip/shaders/simple_pixel.hlsl",
+		"vertex_shader": "assets.zip/shaders/simple_vertex.hlsl",
+		"texture": "assets.zip/textures/platypus.jpg",
+		"mesh": "assets.zip/meshes/cube.obj"
 	},
-	"position_component": {
-		"x": 0,
-		"y": 0
+	"transform_component_3d": {
+		"position_x": 0,
+		"position_y": 0,
+		"position_z": 5,
+		"rotation_x": 0,
+		"rotation_y": 0.785398,
+		"rotation_z": 0,
+		"scale_x": 1,
+		"scale_y": 1,
+		"scale_z": 1
 	}
 }

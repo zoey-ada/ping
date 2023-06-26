@@ -11,9 +11,10 @@
 			"program": "${command:cmake.launchTargetPath}",
 			"args": [],
 			"stopAtEntry": false,
-			"cwd": "${workspaceFolder}/bin/${command:cmake.buildType}",
+			// "cwd": "${workspaceFolder}/bin/${command:cmake.buildType}",
+			"cwd": "${workspaceFolder}/bin",
 			"environment": [],
-			"externalConsole": false
+			"console": "internalConsole"
 		}
 	]
 }
